@@ -36,7 +36,6 @@ set termguicolors
 set nobackup
 set nowritebackup
 set smartindent
-
 " key mappings 
 
 nnoremap <C-n> :NERDTree<CR>
@@ -45,6 +44,7 @@ nnoremap <C-s> :NERDTreeFind<CR>
 noremap <Leader>s :update<CR>
 noremap <Leader>l :FZF<CR>
 noremap <Leader><Tab> gT<CR>
+noremap <C-c> "+y<CR>
 "autoclose tag settings 
 
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
