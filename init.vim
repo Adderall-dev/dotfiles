@@ -11,7 +11,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'alvan/vim-closetag'
+Plug 'leafoftree/vim-vue-plugin'
+Plug 'posva/vim-vue'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
+let g:vim_vue_plugin_load_full_syntax = 1
 let coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
